@@ -20,7 +20,7 @@ const Counter = () => {
             </div>
             <div className='flex flex-col justify-center items-center space-y-2'>
                 <p className='text-3xl font-bold'>
-                <CountUp end={898} duration={3} enableScrollSpy={true}/>
+                <CountUp end={624} duration={3} enableScrollSpy={true}/>
                     </p>
                 <p className='text-lg'>Subject & Courses</p>
             </div>

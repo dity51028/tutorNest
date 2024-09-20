@@ -11,11 +11,13 @@ function App() {
 
   return (
     <>
+    <main className="overflow-x-hidden">
      <Navbar/>
      <NavbarBanner/>
      <Hero/>
      <Counter/>
      <WhyChooseUs/>
+     </main>
     </>
   )
 }
