@@ -7,10 +7,10 @@ import { SlideRight } from '../../utils/animation';
 const Hero = () => {
   return (
     <>
-    <div className='grid grid-cols-1 md:grid-cols-2 min-h-[650px] '>
+    <div className='container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative'>
         {/*info */}
-        <div className='flex flex-col justify-center py-14 md:pr-16 xl:pr-36 md:py-0 '>
-            <div className='text-center md:text-left space-y-4 ml-36'>
+        <div className='flex flex-col justify-center py-14 md:pr-16 xl:pr-40 md:py-0'>
+            <div className='text-center md:text-left space-y-6'>
                 <motion.p 
                 variants={SlideRight(0.4)}
                 initial='hidden'
