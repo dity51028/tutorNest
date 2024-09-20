@@ -21,7 +21,7 @@ const Navbar = () => {
         {/*Logo*/}
         <div className='flex gap-2 justify-center items-center'>
             <FaLaptop className='text-2xl lg:text-4xl text-blue-400'/>
-            <p className='text-2xl xl:text-3xl '>Tutor-Nest</p>
+            <p className='text-2xl lg:text-4xl '>Tutor-Nest</p>
 
         </div>
 
