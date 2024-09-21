@@ -15,7 +15,7 @@ const Hero = () => {
                 variants={SlideRight(0.4)}
                 initial='hidden'
                 animate='visible'
-                className='text-orange-800 uppercase leading-loose text-xl text-center '>100% Satisfaction Gurantee</motion.p>
+                className='text-orange-800 uppercase leading-loose text-xl '>100% Satisfaction Gurantee</motion.p>
                 <motion.h1 
                 variants={SlideRight(0.6)}
                 initial='hidden'
@@ -35,8 +35,8 @@ const Hero = () => {
                 initial='hidden'
                 animate='visible'
                 className='flex gap-4 justify-center md:flex-col lg:flex-row mt-8 items-center'>
-                <button className='bg-primary text-lg font-semibold rounded-full px-4 py-2 hover:!scale-110 hover:!shadow-xl duration-300'>Get Started</button>
-                <button className='flex items-center gap-1 text-base font-medium'>
+                <button className='bg-primary text-sm md:text-xl font-semibold rounded-full px-4 py-2 hover:!scale-110 hover:!shadow-xl duration-300'>Get Started</button>
+                <button className='flex items-center gap-1 text-xs md:text-base md:font-medium'>
                     <span className='w-10 h-10 bg-blue-100 rounded-full flex justify-center items-center hover:!scale-110 hover:!shadow-xl hover:rotate-90 duration-300'>
                     <FaPlay className='text-blue-600'/>
                     </span>

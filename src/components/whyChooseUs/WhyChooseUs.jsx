@@ -19,14 +19,15 @@ const WhyChooseUs = () => {
             {/*cards section*/}
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
                 {
-                    WhyChooseData.map((item)=>{
+                    WhyChooseData.map((item,id)=>{
                         return(
                             <motion.div 
                             variants={SlideLeft(item.delay)}
                             initial="hidden"
                             whileInView={"visible"}
+                            key={id}
 
-                            className='space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)] '>
+                            className='space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)] bg-white'>
                                 {/*icon */}
                                 <div style={{backgroundColor:item.bgColor}} className='w-10 h-10 rounded-lg flex justify-center items-center text-white'>
                                     <FaDumbbell className='text-2xl'/>
