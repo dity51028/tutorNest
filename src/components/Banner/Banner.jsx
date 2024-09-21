@@ -2,21 +2,25 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { SlideUp } from '../../utils/animation'
 
-const Banner = ({image,title,subtitle,link,tag}) => {
+const Banner = ({image,title,subtitle,link,tag,reverse}) => {
   return (
     <>
-    <div className='bg-yellow-50 pb-14'>
+    <div className='bg-yellow-50 pb-14 '>
         <div className='container'>
-            <div className='grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0'>
+            <div className='grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 pt-8'>
                 {/*img section */}
                
-               
+                <div
+                 className={`flex justify-start items-center ${
+                 reverse && "md:order-last md:justify-end"
+                 }`}
+               >
                 <motion.img 
                 initial={{opacity:0,scale:0.5}}
                 whileInView={{opacity:1,scale:1}}
                 transition={{type:'spring',stiffness:100,delay:0.2}}
                 src={image} alt="img1" className='w-[400px] h-full object-cover' />
-                
+                </div>
 
                 {/*descriptions */}
                 <div className='flex flex-col justify-center text-center md:text-left space-y-4 lg:max-w-[500px]'>

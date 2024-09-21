@@ -6,6 +6,7 @@ import WhyChooseUs from "./components/whyChooseUs/WhyChooseUs"
 import Img1 from "./assets/banner1.png";
 import Img2 from "./assets/banner2.png";
 import Banner from "./components/Banner/Banner"
+import Subject from "./components/Subjects/Subject"
 
 const BannerData = {
   image: Img1,
@@ -39,6 +40,7 @@ function App() {
      <WhyChooseUs/>
      <Banner {...BannerData}/>
      <Banner {...BannerData2} reverse={true}/>
+     <Subject/>
      </main>
     </>
   )
